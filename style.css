@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+i {
+  vertical-align: middle;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background: #f2f4f7;
+}
+#menu {
+  max-width: 313px;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 10px 125px 4px rgb(0 0 0 / 39%);
+  border-radius: 8px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#menu_toggle {
+  display: flex;
+  font-size: 22px;
+  font-weight: 400;
+  padding: 22px;
+  background: #1953a9;
+  color: #f7f6f2;
+  border-radius: 8px;
+}
+#menu_toggle span {
+  margin-left: 15px;
+  display: inline-block;
+}
+#content {
+  transition: all 0.5s;
+  height: 0px;
+}
+#menu_items {
+  transition: all 0.5s;
+}
+#menu_items a {
+  font-size: 22px;
+  font-weight: 400;
+  padding: 22px;
+  background: #ffffff;
+  color: #000000;
+  border-radius: 8px;
+  display: block;
+  transition: all 0.5s;
+}
+#menu_items a:hover {
+  background: #4c526f17;
+}
+#menu_items li i {
+  color: #1a53a9;
+  margin-right: 15px;
+}
